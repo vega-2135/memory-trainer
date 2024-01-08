@@ -1,0 +1,11 @@
+h1 {
+    text-align: center;
+}
+
+.images_container {
+    height: 80%;
+    width: 80%;
+    background-color: beige;
+    border: solid blue;
+    margin: auto;
+}
