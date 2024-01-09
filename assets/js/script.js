@@ -10,6 +10,24 @@ let easyLevelSection = document.getElementById("egame-section");
 let gameSection = document.getElementById("game-section");
 
 
+// Array with easy game images
+let easyGame = document.getElementById("easy-game");
+let easyImages = [
+    {
+        src: "assets/images/scaled_images/blueberries.png", alt: "blueberries", class: "cards"
+    },
+    {
+        src: "assets/images/scaled_images/lemon.png", alt: "lemon", class: "cards"
+    },
+    {
+        src: "assets/images/scaled_images/red_flower.jpg", alt: "red flower", class: "cards"
+    },
+    {
+        src: "assets/images/scaled_images/white_flower.jpg", alt: "white flower", class: "cards"
+    }
+]
+
+
 // document.addEventListener('DOMContentLoaded', function() {
 //     playButton.addEventListener('click', changePage("welcome"));
 // })
@@ -38,5 +56,17 @@ function changePage(id) {
 
 playButton.addEventListener("click", () => changePage("welcome"));
 easyButton.addEventListener("click", () => changePage("easy"));
+addEasyImages();
+console.log(easyGame.innerHTML);
+
 mediumButton.addEventListener("click", () => changePage("level"));
 hardButton.addEventListener("click", () => changePage("level"));
+
+
+function addEasyImages() {
+    let easyGameContent = "";
+    easyImages.forEach(image => {
+    easyGameContent += `<img src="${image.src}" alt="${image.alt}" class="${image.class}">\n`;
+    }); // New line id added because otherwise the css wont be applied completely to the images
+    easyGame.innerHTML = easyGameContent;
+}
