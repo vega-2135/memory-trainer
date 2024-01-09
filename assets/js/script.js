@@ -1,54 +1,36 @@
-document.addEventListener('DOMContentLoaded', function() {
-    let playButton = document.getElementById("play-button");
-
-    playButton.addEventListener('click', function() {
-        if (this.getAttribute('data-type') === 'play') {
-            selecLevel();
-        }
-    })
-})
+let playButton = document.getElementById("play-button");
+let easyButton = document.getElementById("easy");
+let mediumButton = document.getElementById("medium");
+let hardButton = document.getElementById("hard");
 
 
-const images = [
+let welcomeSection = document.getElementById("welcome-section");
+let levelSection = document.getElementById("level-section");
+let gameSection = document.getElementById("game-section");
 
-    {
-        src: "assets/images/",
-    },
-    {
-        src:
-    },
-    {
 
+// document.addEventListener('DOMContentLoaded', function() {
+//     playButton.addEventListener('click', changePage("welcome"));
+// })
+
+// Function to change between sections
+function changePage(id) {
+    switch (id) {
+        case "welcome":
+            welcomeSection.classList.toggle("hidden");
+            levelSection.classList.toggle("hidden");
+            break;
+        case "level":
+            levelSection.classList.toggle("hidden");
+            gameSection.classList.toggle("hidden");
+            break;
+        default:
+            gameSection.classList.toggle("hidden");
+            welcomeSection.classList.toggle("hidden");
     }
-
-
-];
-
-
-
-let difficultyLevel;
-
-function selectLevel() {
-    
-    const easyButton = document.getElementById("easy-button");
-    const mediumButton = document.getElementById("medium-button");
-    const hardButton = document.getElementById("hard-button");
-
-
-    easyButton.addEventListener("click", setDifficulty(8));
-
-    mediumButton.addEventListener("click", setDifficulty(10));
-
-    easyButton.classList.toggle("")
-
-
 }
 
-function setDifficulty(value) {
-    difficultyLevel = value;
-    
-}
-
-
-
-
+playButton.addEventListener("click", () => changePage("welcome"));
+easyButton.addEventListener("click", () => changePage("level"));
+mediumButton.addEventListener("click", () => changePage("level"));
+hardButton.addEventListener("click", () => changePage("level"));

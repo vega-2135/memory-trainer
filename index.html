@@ -10,11 +10,10 @@
     <!-- Title -->
     <h1>Memory Trainer</h1>
 
-    <div id="game-section">
+    <div id="game">
         <div class="images_container">
-
             <!-- First welcome screen-->
-            <section id="welcome-page" hidden>
+            <section id="welcome-section">
                 <div id="welcome">
                     <h3 id="welcome-message">Welcome to Memory Trainer</h3>
                     <p id="explanation">The idea of this game is to find all pairs of matching pictures</p>
@@ -24,7 +23,7 @@
                 </div>
             </section>
             
-            <section id="level-page">
+            <section id="level-section" class="hidden">
                 <!-- Second screen choosing difficulty-->
                 <div id="difficulty">
                     <h3 id="difficulty-text">Choose difficulty level:</h3>
@@ -33,13 +32,15 @@
                     <button id="hard">Hard</button>
                 </div>
             </section>
+
+            <!--Third screen with cards with game-->
+            <section id="game-section" class="hidden">
+            </section>
         </div>
+    
     </div>
 
 
-    <!--Third screen with cards with game-->
-    <div id="game_screen" class="hidden">
-    </div>
     
 
     <script src="assets/js/script.js"></script>
