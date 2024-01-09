@@ -6,6 +6,7 @@ let hardButton = document.getElementById("hard");
 
 let welcomeSection = document.getElementById("welcome-section");
 let levelSection = document.getElementById("level-section");
+let easyLevelSection = document.getElementById("egame-section");
 let gameSection = document.getElementById("game-section");
 
 
@@ -24,6 +25,11 @@ function changePage(id) {
             levelSection.classList.toggle("hidden");
             gameSection.classList.toggle("hidden");
             break;
+        case "easy":
+            levelSection.classList.toggle("hidden");
+            easyLevelSection.classList.toggle("hidden");
+            gameSection.classList.toggle("hidden");
+            break;
         default:
             gameSection.classList.toggle("hidden");
             welcomeSection.classList.toggle("hidden");
@@ -31,6 +37,6 @@ function changePage(id) {
 }
 
 playButton.addEventListener("click", () => changePage("welcome"));
-easyButton.addEventListener("click", () => changePage("level"));
+easyButton.addEventListener("click", () => changePage("easy"));
 mediumButton.addEventListener("click", () => changePage("level"));
 hardButton.addEventListener("click", () => changePage("level"));
