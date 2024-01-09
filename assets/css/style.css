@@ -27,7 +27,30 @@ h1 {
     max-width: 100px;
     align-self: center;
     margin-bottom: 50px;
+}
 
 #play-button {
     font-size: 24px;
+}
+
+#difficulty {
+    align-items: flex-start;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#difficulty-text, #easy, #medium, #hard {
+    font-size: 2rem;
+}
+
+#difficulty-text{
+    background-color: lightgray;
+    border: solid;
+    padding: 20px;
+}
+
+#easy, #medium, #hard {
+    margin: 20px 0;
 }
