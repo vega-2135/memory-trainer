@@ -64,9 +64,11 @@ h1 {
 
 #easy:hover, #medium:hover, #hard:hover {
     background-color: bisque;
-  }
+}
 
-.cards {
-    max-width: 50px;
-    max-height: 50px;
+#easy-game {
+    display: block;
+    padding: 100px 50px 50px 100px;
+    height: 450px;
+    max-width: 450px;
 }
