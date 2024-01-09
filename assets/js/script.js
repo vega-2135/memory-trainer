@@ -29,10 +29,7 @@ const images = [
 let difficultyLevel;
 
 function selectLevel() {
-    document.getElementById('difficulty').value = 
     
-
-
     const easyButton = document.getElementById("easy-button");
     const mediumButton = document.getElementById("medium-button");
     const hardButton = document.getElementById("hard-button");
