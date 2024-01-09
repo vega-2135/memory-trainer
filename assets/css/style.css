@@ -46,7 +46,7 @@ h1 {
 }
 
 #difficulty-text, #easy, #medium, #hard {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 #difficulty-text{
@@ -57,4 +57,11 @@ h1 {
 
 #easy, #medium, #hard {
     margin: 20px 0;
+    min-width: 150px;
+    border: solid rgb(18, 54, 66);
+    border-radius: 10px;
 }
+
+#easy:hover, #medium:hover, #hard:hover {
+    background-color: bisque;
+  }
