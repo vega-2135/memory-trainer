@@ -5,7 +5,29 @@ h1 {
 .images_container {
     height: 600px;
     width: 600px;
-    background-color: beige;
-    border: solid blue;
+    background-color: rgb(194, 229, 240);
+    border: solid lightgray;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#welcome {
+    align-items: flex-start;
+    text-align: center;
+    background-color: gray;
+    margin: auto;
+    height: 100px;
+    width: 60%;
+    padding: 10px 0;
+}
+
+#play-game {
+    max-height: 50px;
+    max-width: 100px;
+    align-self: center;
+    margin-bottom: 50px;
+
+#play-button {
+    font-size: 24px;
 }
