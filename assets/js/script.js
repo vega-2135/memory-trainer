@@ -56,8 +56,11 @@ function changePage(id) {
 
 playButton.addEventListener("click", () => changePage("welcome"));
 easyButton.addEventListener("click", () => changePage("easy"));
+
+// Shuffle images 
+imageRandomizer(easyImages);
 addEasyImages();
-console.log(easyGame.innerHTML);
+
 
 mediumButton.addEventListener("click", () => changePage("level"));
 hardButton.addEventListener("click", () => changePage("level"));
@@ -70,3 +73,13 @@ function addEasyImages() {
     }); // New line id added because otherwise the css wont be applied completely to the images
     easyGame.innerHTML = easyGameContent;
 }
+
+
+function imageRandomizer(a) {
+  for (let i = a.length - 1; i > 0; i--) { 
+    const j = Math.floor(Math.random() * (i + 1)); 
+    [a[i], a[j]] = [a[j], a[i]]; 
+    } 
+  return a;
+  }
+
