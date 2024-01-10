@@ -72,3 +72,7 @@ h1 {
     height: 450px;
     max-width: 450px;
 }
+
+.cards {
+    margin: auto 15px auto 15px;
+}
