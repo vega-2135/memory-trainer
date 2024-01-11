@@ -1,3 +1,7 @@
+html {
+    font-family: 'Exo 2', sans-serif;
+}
+
 h1 {
     text-align: center;
 }
@@ -19,11 +23,18 @@ h1 {
 #welcome {
     align-items: flex-start;
     text-align: center;
-    background-color: gray;
+    background-color: #f2f0f0;
     margin: auto;
     height: 100px;
     width: 60%;
     padding: 10px 0;
+    margin-bottom: 300px;
+}
+
+#welcome-section {
+    display: flex;
+    height: 600px;
+    flex-direction: column;
 }
 
 #play-game {
