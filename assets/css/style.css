@@ -28,13 +28,6 @@ h1 {
     height: 100px;
     width: 60%;
     padding: 10px 0;
-    margin-bottom: 300px;
-}
-
-#welcome-section {
-    display: flex;
-    height: 600px;
-    flex-direction: column;
 }
 
 #play-game {
@@ -61,7 +54,7 @@ h1 {
 }
 
 #difficulty-text{
-    background-color: lightgray;
+    background-color: #f2f0f0;
     border: solid;
     padding: 20px;
 }
