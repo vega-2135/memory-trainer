@@ -42,6 +42,8 @@ h1 {
     margin: auto;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-self: center;
 }
 
 #welcome {

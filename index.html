@@ -19,35 +19,41 @@
     </header>
 
     <main>
-        <div id="game">
-            <div class="images_container">
-                <!-- First welcome screen-->
-                <section id="welcome-section">
-                    <div id="welcome">
-                        <h3 id="welcome-message">Welcome to Memory Trainer</h3>
-                        <p id="explanation">The idea of this game is to find all pairs of matching pictures</p>
-                    </div>
-                    <div  id="play-game">
-                        <button data-type="play" id="play-button">Play Game</button>
-                    </div>
-                </section>
-                
-                <!-- Second screen choosing difficulty-->
-                <section id="level-section" class="hidden">
-                    <div id="difficulty">
-                        <h3 id="difficulty-text">Choose difficulty level:</h3>
-                        <button id="easy">Easy</button>
-                        <button id="medium">Medium</button>
-                        <button id="hard">Hard</button>
-                    </div>
-                </section>
-    
-                <!--Third screen with cards with game-->
-                <section id="game-section" class="hidden">
-                </section>
-            </div>
-        
+        <div class="images_container">
+            <!-- First welcome screen-->
+            <section id="welcome-section">
+                <div id="welcome">
+                    <h3 id="welcome-message">Welcome to Memory Trainer</h3>
+                    <p id="explanation">The idea of this game is to find all pairs of matching pictures</p>
+                </div>
+                <div  id="play-game">
+                    <button data-type="play" id="play-button">Play Game</button>
+                </div>
+            </section>
+            
+            <!-- Second screen choosing difficulty-->
+            <section id="level-section" class="hidden">
+                <div id="difficulty">
+                    <h3 id="difficulty-text">Choose difficulty level:</h3>
+                    <button id="easy">Easy</button>
+                    <button id="medium">Medium</button>
+                    <button id="hard">Hard</button>
+                </div>
+            </section>
+
+            <!--Third screen with cards with game-->
+            <section id="game-section" class="hidden">
+            </section>
         </div>
+
+        <div id="pairs">
+            <p class="scores">Found Pairs: <span id="score">0</span></p>
+        </div>
+
+        <div>
+            <button>Reset</button>
+        </div>
+
     </main>
    
 
