@@ -4,6 +4,9 @@ html {
 
 h1 {
     text-align: center;
+    background-color: lightpink;
+    height: 70px;
+    padding-top: 25px;
 }
 
 .hidden {
@@ -79,4 +82,10 @@ h1 {
 
 .cards {
     margin: auto 15px auto 15px;
+}
+
+#footer {
+    height: 30px;
+    background-color: lightpink;
+    margin-top: 20px;
 }
