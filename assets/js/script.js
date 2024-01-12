@@ -19,7 +19,10 @@ let hardLength = 8;
 let currentlyMatchingCards = 0;
 let clickedImages = [];
 
-// Array with easy game images
+// Answer will be an array containing img objects with the final index showed in the game
+let answer;
+
+// Array with all images (for easy. medium and hard levels)
 const images = [
     {
         src: "assets/images/scaled_images/blueberries.png",
@@ -56,7 +59,8 @@ const images = [
 ]
 
 // Function to change between sections
-function changePage(id, level_length) {
+function changePage(id, levelLength) {
+
     switch (id) {
         case "welcome":
             welcomeSection.classList.toggle("hidden");
@@ -65,8 +69,8 @@ function changePage(id, level_length) {
         case "level":
             levelSection.classList.toggle("hidden");
             gameSection.classList.toggle("hidden");
-            //showCards();
-            showBlockedCards(level_length);
+            shuffleImagesPositions(images);
+            showBlockedCards(levelLength);
             break;
 
         // Game ends and shows back the welcome
@@ -76,7 +80,9 @@ function changePage(id, level_length) {
     }
 }
 
+
 function shuffleImagesPositions(array) {
+
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
@@ -84,9 +90,15 @@ function shuffleImagesPositions(array) {
   return array;
 }
 
-function showBlockedCards(game_level_length) {
+
+function showBlockedCards(levelLength) {
+
+    let levelImages = images.slice(0, levelLength);
+    let totalImages = levelImages.concat(levelImages);
+    answer = shuffleImagesPositions(totalImages);
+
     let gameCoverCards = "";
-    for (let i = 0; i < game_level_length * 2; i++) {
+    for (let i = 0; i < levelLength * 2; i++) {
         gameCoverCards += `<img src=${coverImage} alt='pink_square' class='cards' id='square${i}' onclick="showCard(${i})"/>`;
     }
     gameSection.innerHTML = gameCoverCards;
@@ -94,9 +106,11 @@ function showBlockedCards(game_level_length) {
 
 
 function showCard(id) {
+
     const img = document.getElementById("square"+id);
+    
     if (img.src.endsWith(coverImage)) {
-        img.src = "assets/images/scaled_images/blueberries.png";
+        img.src = answer[id]['src'];
         console.log("showed the card");
     } else {
         img.src = coverImage;
@@ -105,20 +119,7 @@ function showCard(id) {
 
 }
 
-
-function showCards() {
-
-    // show length amount of cards pink square
-    showBlockedCards()
-
-    // // Shuffle uncovered images position
-    // shuffleImagesPositions()
-    // // Store images positions
-    // storeImagesPositions();
-}
-
-
 playButton.addEventListener("click", () => changePage("welcome"));
-easyButton.addEventListener("click", () => changePage("level", easyLength));
+easyButton.addEventListener("click", () => changePage("level", easyLength))
 mediumButton.addEventListener("click", () => changePage("level", mediumLength));
 hardButton.addEventListener("click", () => changePage("level", hardLength));
