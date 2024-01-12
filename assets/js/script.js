@@ -17,7 +17,6 @@ let mediumLength = 4;
 let hardLength = 8;
 
 let currentlyMatchingCards = 0;
-let clickedImages = [];
 
 // Answer will be an array containing img objects with the final index showed in the game
 let answer;
@@ -117,6 +116,10 @@ function showCard(id) {
         console.log("covered the card");
     }
 
+}
+
+function matchingCards() {
+    
 }
 
 playButton.addEventListener("click", () => changePage("welcome"));

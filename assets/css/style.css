@@ -1,16 +1,37 @@
+/* General styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    /* Make main element take any additional space and push the footer down */
+    flex: 1 0 auto;
+}
+
+
 html {
     font-family: 'Exo 2', sans-serif;
 }
 
-h1 {
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     background-color: lightpink;
     height: 70px;
     padding-top: 25px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    margin-bottom: 50px;
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .images_container {
@@ -31,6 +52,12 @@ h1 {
     height: 100px;
     width: 60%;
     padding: 10px 0;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
 }
 
 #play-game {
