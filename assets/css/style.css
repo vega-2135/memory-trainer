@@ -110,11 +110,20 @@ h1 {
 }
 
 .cards {
-    margin: auto 15px auto 15px;
+    margin: 15px;
 }
 
 #footer {
     height: 30px;
     background-color: lightpink;
     margin-top: 20px;
+}
+
+#all-cards {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
 }
