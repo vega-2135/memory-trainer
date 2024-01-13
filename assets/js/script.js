@@ -9,7 +9,7 @@ let welcomeSection = document.getElementById("welcome-section");
 let levelSection = document.getElementById("level-section");
 let easyLevelSection = document.getElementById("egame-section");
 let gameSection = document.getElementById("game-section");
-let cards = document.getElementById("cards")
+let allCards = document.getElementById("all-cards")
 
 let difficulty;
 
@@ -35,27 +35,33 @@ let flippedCards = [];
 let images = [
     {
         src: "assets/images/scaled_images/blueberries.png",
-        alt: "blueberries"
+        alt: "blueberries",
+        class:"cards"
     },
     {
         src: "assets/images/scaled_images/lemon.png",
-        alt: "lemon"
+        alt: "lemon",
+        class:"cards"
     },
     {
         src: "assets/images/scaled_images/white_flower.jpg",
-        alt: "white flower"
+        alt: "white flower",
+        class:"cards"
     },
     {
         src: "assets/images/scaled_images/violet_flower.jpg",
-        alt: "violet flower"
+        alt: "violet flower",
+        class:"cards"
     },
     {
         src: "assets/images/scaled_images/yellow_flower.jpg",
-        alt: "yellow flower"
+        alt: "yellow flower",
+        class:"cards"
     },
     {
         src: "assets/images/scaled_images/pineapple.jpg",
-        alt: "pineapple"
+        alt: "pineapple",
+        class:"cards"
     }
 ]
 
@@ -105,7 +111,7 @@ function showBlockedCards(levelLength) {
     for (let i = 0; i < levelLength * 2; i++) {
         gameCoverCards += `<img src=${coverImage} alt='pink_square' class='cards' id='square${i}' onclick="showCard(${i})"/>`;
     }
-    cards.innerHTML = gameCoverCards;
+    allCards.innerHTML = gameCoverCards;
 }
 
 
