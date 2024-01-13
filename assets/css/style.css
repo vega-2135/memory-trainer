@@ -118,7 +118,7 @@ button {
 
 #all-cards {
     display: flex;
-    max-width: 800px;
+    max-width: 690px;
     width: 100%;
     flex-wrap: wrap;
     align-items: center;
