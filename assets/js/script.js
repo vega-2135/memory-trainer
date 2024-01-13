@@ -9,6 +9,7 @@ let welcomeSection = document.getElementById("welcome-section");
 let levelSection = document.getElementById("level-section");
 let easyLevelSection = document.getElementById("egame-section");
 let gameSection = document.getElementById("game-section");
+let cards = document.getElementById("cards")
 
 let difficulty;
 
@@ -104,7 +105,7 @@ function showBlockedCards(levelLength) {
     for (let i = 0; i < levelLength * 2; i++) {
         gameCoverCards += `<img src=${coverImage} alt='pink_square' class='cards' id='square${i}' onclick="showCard(${i})"/>`;
     }
-    gameSection.innerHTML = gameCoverCards;
+    cards.innerHTML = gameCoverCards;
 }
 
 
