@@ -4,6 +4,7 @@ let easyButton = document.getElementById("easy");
 let mediumButton = document.getElementById("medium");
 let hardButton = document.getElementById("hard");
 let resetButton = document.getElementById("reset");
+let playNewGameButton = document.getElementById("play-new-game-button");
 
 let welcomeSection = document.getElementById("welcome-section");
 let levelSection = document.getElementById("level-section");
@@ -82,7 +83,6 @@ function changePage(id, levelLength) {
             shuffleImagesPositions(images);
             showBlockedCards(levelLength);
             break;
-
         // Game ends and shows back the welcome
         default:
             gameSection.classList.toggle("hidden");
@@ -163,8 +163,6 @@ function resetGame(difficulty) {
     showBlockedCards(difficulty);
 
     currentlyMatchingCards = 0;
-
-
 }
 
 playButton.addEventListener("click", () => changePage("welcome"));
@@ -172,3 +170,4 @@ easyButton.addEventListener("click", () => changePage("level", easyLength))
 mediumButton.addEventListener("click", () => changePage("level", mediumLength));
 hardButton.addEventListener("click", () => changePage("level", hardLength));
 resetButton.addEventListener("click", () => resetGame(difficulty));
+playNewGameButton.addEventListener("click", () => changePage("goback"));
