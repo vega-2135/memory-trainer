@@ -10,8 +10,7 @@ main {
     flex: 1 0 auto;
 }
 
-
-html {
+html, button {
     font-family: 'Exo 2', sans-serif;
 }
 
@@ -28,6 +27,11 @@ header {
 
 h1 {
     margin-bottom: 50px;
+}
+
+button {
+    font-size: 1.5rem;
+    margin: 15px;
 }
 
 .hidden {
@@ -84,10 +88,6 @@ h1 {
     padding: 20px;
 }
 
-button {
-    font-size: 1.5rem;
-}
-
 #easy, #medium, #hard {
     margin: 20px 0;
     min-width: 150px;
@@ -123,4 +123,9 @@ button {
     flex-wrap: wrap;
     align-items: center;
     margin: 0 auto;
+}
+
+#game-btn-container {
+    display: flex;
+    justify-content: center;
 }
