@@ -18,7 +18,7 @@ const coverImage = "assets/images/scaled_images/pink_square.png";
 // Number of pairs depending on level
 let easyLength = 3;
 let mediumLength = 4;
-let hardLength = 8;
+let hardLength = 6;
 
 // Counter of found pairs of images
 let currentlyMatchingCards = 0;
@@ -41,16 +41,8 @@ let images = [
         alt: "lemon"
     },
     {
-        src: "assets/images/scaled_images/red_flower.jpg",
-        alt: "blueberries"
-    },
-    {
         src: "assets/images/scaled_images/white_flower.jpg",
         alt: "white flower"
-    },
-    {
-        src: "assets/images/scaled_images/strawberry.jpg",
-        alt: "strawberry"
     },
     {
         src: "assets/images/scaled_images/violet_flower.jpg",
