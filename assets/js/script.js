@@ -1,12 +1,16 @@
+// Buttons
 let playButton = document.getElementById("play-button");
 let easyButton = document.getElementById("easy");
 let mediumButton = document.getElementById("medium");
 let hardButton = document.getElementById("hard");
+let resetButton = document.getElementById("reset");
 
 let welcomeSection = document.getElementById("welcome-section");
 let levelSection = document.getElementById("level-section");
 let easyLevelSection = document.getElementById("egame-section");
 let gameSection = document.getElementById("game-section");
+
+let difficulty;
 
 // Image used as the cover
 const coverImage = "assets/images/scaled_images/pink_square.png";
@@ -16,13 +20,18 @@ let easyLength = 3;
 let mediumLength = 4;
 let hardLength = 8;
 
+// Counter of found pairs of images
 let currentlyMatchingCards = 0;
 
 // Answer will be an array containing img objects with the final index showed in the game
 let answer;
 
+//Array to be filled with ids pairs to which will be used as indexes of images objects to check wether two pictures are the same
+let flippedCards = [];
+
+
 // Array with all images (for easy. medium and hard levels)
-const images = [
+let images = [
     {
         src: "assets/images/scaled_images/blueberries.png",
         alt: "blueberries"
@@ -59,6 +68,9 @@ const images = [
 
 // Function to change between sections
 function changePage(id, levelLength) {
+
+    difficulty = levelLength;
+    console.log(difficulty);
 
     switch (id) {
         case "welcome":
@@ -104,25 +116,60 @@ function showBlockedCards(levelLength) {
 }
 
 
+
 function showCard(id) {
+    const img = document.getElementById("square" + id);
 
-    const img = document.getElementById("square"+id);
-    
-    if (img.src.endsWith(coverImage)) {
+    if (!flippedCards.includes(id) && flippedCards.length < 2) {
         img.src = answer[id]['src'];
-        console.log("showed the card");
-    } else {
-        img.src = coverImage;
-        console.log("covered the card");
-    }
+        flippedCards.push(id);
 
+        // todo: let's make it clearere why we need to check against 2
+        if (flippedCards.length === 2) {
+            setTimeout(() => {
+                matchingCards()
+            }, 500); // Delay time before a third click of a cover image for better user experience
+        }
+    }
 }
+
 
 function matchingCards() {
     
+    const [id1, id2] = flippedCards;
+    const img1 = document.getElementById("square" + id1);
+    const img2 = document.getElementById("square" + id2);
+
+    if (answer[id1]['src'] === answer[id2]['src']) {
+        currentlyMatchingCards += 2;
+        if (currentlyMatchingCards === answer.length) {
+            // All pairs were found, player can end the game and play again
+            currentlyMatchingCards = 0;
+            alert("Congratulations! You've matched all the cards.");
+            changePage("reset");
+        }
+    } else {
+        // Cards don't match, flip them back
+        img1.src = coverImage;
+        img2.src = coverImage;
+    }
+
+    flippedCards = []; // Reset flipped cards array
+}
+
+function resetGame(difficulty) {
+
+    images = shuffleImagesPositions(images);
+
+    showBlockedCards(difficulty);
+
+    currentlyMatchingCards = 0;
+
+
 }
 
 playButton.addEventListener("click", () => changePage("welcome"));
 easyButton.addEventListener("click", () => changePage("level", easyLength))
 mediumButton.addEventListener("click", () => changePage("level", mediumLength));
 hardButton.addEventListener("click", () => changePage("level", hardLength));
+resetButton.addEventListener("click", () => resetGame(difficulty));
