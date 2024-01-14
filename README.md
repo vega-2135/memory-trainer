@@ -1,39 +1,40 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1 align="center">Memory Trainer</h1>
 
-Welcome,
+Memory Trainer is a entertaining simple to play memory card game targeted towards users of all ages. The site was designed with the purpose of be friendly easy to navigate and accesible in different devises.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<h2 align="center"><img src="image"></h2>
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+[View the live project here.](https://github.com/vega-2135/memory-trainer/deployments/github-pages)
 
-## Codeanywhere Reminders
+## User Experience (UX)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+-   ### User stories
 
-`python3 -m http.server`
+    1. As a First Time Visitor, I want to easily find the website with the game.
+    2. As a First Time Visitor, I want to know what is the game about.
+    3. As a First Time Visitor, I want to easily navigate the website.
+    4. As a First Time Visitor, I want to quickly learn how to play the game.
+    5. As a First Time Visitor, I want to select the level of difficulty.
+    6. As a First Time Visitor, I want to have a feedback when I find a matching pair of pictures amd when I win the game.
+    7. As a First Time Visitor, I want to be able to reset the game or play a new game whenever I choose.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+-   ### Design
+    -   #### Colour Scheme
+        -   The color Light pink was selected for the title/header of the Game because it makes a good contrast with the black color of the title font making it easy to read.
+        - For the cover image the color pink was chosen.
+        - When the user hovers over any button, the button change its color from grey to bisque.
+    -   #### Typography
+        -   The Exo 2 font is the main font used throughout the whole website, Sans Serif is used as the fallback font in case the primary chosen font can't be loaded and used in the website. Exo 2 is a popular font used for game apps.
+    -   #### Imagery
+        -   Card Images: A variety of flowers and fruits images where chosen for the cards of the game.
+        -   Background Image:
+    -   ### Icons
+        - A game controler was picked for the favicon so that the user cand easily find the tab with the game.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+*   ### Wireframes
 
-`http_server`
+    -   Welcome Page Wireframe - [View](https://github.com/vega-2135/memory-trainer/wireframes/welcome_page.png)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+    -   Levels Page Wireframe - [View](https://github.com/vega-2135/memory-trainer/wireframes/level_page.png)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+    -   Game Page Wireframe - [View](https://github.com/vega-2135/memory-trainer/wireframes/game_page.png)
