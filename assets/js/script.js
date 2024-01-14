@@ -73,7 +73,6 @@ let images = [
 function changePage(id, levelLength) {
 
     difficulty = levelLength;
-    console.log(difficulty);
 
     switch (id) {
         // Player has select "Play Game" from the welcome screen
