@@ -89,7 +89,6 @@ button:hover {
     text-align: center;
     background-color: #f2f0f0;
     margin: auto;
-    height: 100px;
     width: 60%;
     padding: 10px 0;
 }
@@ -175,4 +174,5 @@ div#footer i {
     #difficulty-text {
         font-size: 1.2rem;
     }
+
 }
