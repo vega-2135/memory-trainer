@@ -2,7 +2,7 @@
 
 Memory Trainer is a entertaining simple to play memory card game targeted towards users of all ages. The site was designed with the purpose of be friendly easy to navigate and accesible in different devises.
 
-<h2 align="center"><img src="image"></h2>
+<h2 align="center"><img src=docs_for_readme/game_mockup.png></h2>
 
 [View the live project here.](https://github.com/vega-2135/memory-trainer/deployments/github-pages)
 
