@@ -71,8 +71,6 @@ button:hover {
 }
 
 #play-game {
-    max-height: 50px;
-    max-width: 100px;
     align-self: center;
     margin-bottom: 50px;
 }
