@@ -60,3 +60,40 @@ Memory Trainer is a entertaining simple to play memory card game targeted toward
       - More levels of difficulty.
       - Users will be able to sign-in and have an account with all their scores.
       - A timer will be added to the game.
+
+## Technologies Used
+
+### Languages Used
+
+- HTML
+- CSS
+- JavaScript
+
+### Frameworks, Libraries and Programs used
+
+- [GitHub:](https://github.com/)
+   - GitHub is a version control platform used for collaborative development and code management.
+
+- [Google Fonts:] (https://fonts.google.com/)  
+   - Google fonts were used to import and apply a variety of fonts to enhance the visual appeal of the website.
+
+- [Google Developer Tools:]  
+   - Google developer Tools are Integrated browser tools used for debugging, profiling, and optimizing the website during development.
+
+- [Icons:] (https://icons8.com/icons/set/favicon-game) 
+   - Tool used to find all kind of icons, used for the controler icon of the website.
+
+- [Font Awesome:] (https://fontawesome.com/)
+   - Font Awsome is a Icon toolkit used for the arrow icon of the Reshuffle Cards button.
+
+- [VSCode (Visual Studio Code):] (https://code.visualstudio.com/) 
+   - VSCode is a lightweight and powerful code editor used for writing, editing, and debugging the code for this game.
+
+- [Techsini:] (https://techsini.com/multi-mockup/)
+   - Techsii was used to create mockup images of home page in different devices (phone, ipad, laptop, desktop).
+
+- [Pexels:] (https://www.pexels.com/)
+   - Pexels is an online platform for high-quality stock photos, used for the cards pictures of the game.
+
+- [Balsamiq:] (https://balsamiq.com/)
+   - Balsamiq was used to generate wireframes of the game page.
