@@ -136,6 +136,9 @@ button:hover {
     height: 30px;
     background-color: lightpink;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #all-cards {
@@ -153,6 +156,10 @@ button:hover {
     justify-content: center;
 }
 
+div#footer i {
+    color: black;
+    margin: 0 10px;
+}
 
 @media screen and (max-width: 290px) {
 
