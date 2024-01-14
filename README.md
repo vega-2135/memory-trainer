@@ -97,3 +97,49 @@ Memory Trainer is a entertaining simple to play memory card game targeted toward
 
 - [Balsamiq:](https://balsamiq.com/)
    - Balsamiq was used to generate wireframes of the game page.
+
+## Testing
+The W3C Markup Validator, W3C CSS Validator and JSHint JavaScript Validator Services were used to validate HTML and CSS and JavaScript code of the project to ensure there were no syntax errors in this project.
+
+
+## Deployment
+### Deployment
+
+#### 1. GitHub Pages Hosting:
+
+Memory Trainer was developed using the VSCode, committed to git and pushed to GitHub.
+
+To deploy Memory Trainer to GitHub Pages from its GitHub repository, the following steps were taken:
+
+1. Log-in in github.
+2. Open repositories page.
+3. Go to Memory Trainer repository.
+4. On the top menu select settings.
+5. In settings, on the left side menu, select Pages.
+6. In the Build and Development: 
+     - In Source, select deploy from a branch.
+     - In Branch, select main and then click save.
+7. After a couple of minutes at the top of the page a link with the deployed page will appear.
+
+#### 2. Clone Repository:
+   - Open a terminal or command prompt on your local machine.
+   - Use the following command to clone the repository to your local environment:
+     ```bash
+     git clone https://github.com/vega-2135/memory-trainer
+     ```
+
+3. ### Navigate to the Project:
+   - Change into the project directory:
+     ```bash
+     cd https://github.com/vega-2135/memory-trainer
+     ```
+
+4. ### View Locally:
+   - Open the `index.html` file in your preferred web browser to preview the website locally.
+
+
+#### GitHub Pages Configuration:
+
+GitHub Pages automatically publishes your site when you push changes to the `gh-pages` branch or the `docs` folder in the `main` branch. Ensure your repository is configured accordingly for GitHub Pages.
+
+For more details on GitHub Pages, refer to the [GitHub Pages Documentation](https://docs.github.com/en/pages).
