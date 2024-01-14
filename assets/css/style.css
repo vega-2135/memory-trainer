@@ -118,6 +118,7 @@ button:hover {
 
 .cards {
     margin: 15px;
+    border-radius: 10px;
 }
 
 #footer {
