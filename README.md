@@ -52,7 +52,7 @@ Memory Trainer is a entertaining simple to play memory card game targeted toward
     -  #### Game Page
        - Once the user click on a level button, a new page appears with cards (6 in the easy level, 8 in the medium and 12 in the hard level). All cards are cover by a pink card that once the user click on it, it will show a picture.
        - After clicking the second pink card, if the appearing picture does not match the picture in the first card, then both pictures are 'covered' again with a pink card. If the second picture match the first one, then both pictures remain uncover.
-       - Once the user has found all pairs, an alert message appear containing the following message: Congratulations! You've matched all the cards. 
+       - Once the user has found all pairs, an alert message appear containing the following message: Congratulativns! You've matched all the cards. 
        -  At all times the user can press the reshuffle card button, to reset the game, i.e. the cards of the game are reshuffled and the game start again, or press the play again button, in which case, the user is taken to the level page.
 
 -   #### Upcoming Features
@@ -74,26 +74,26 @@ Memory Trainer is a entertaining simple to play memory card game targeted toward
 - [GitHub:](https://github.com/)
    - GitHub is a version control platform used for collaborative development and code management.
 
-- [Google Fonts:] (https://fonts.google.com/)  
+- [Google Fonts:](https://fonts.google.com/)  
    - Google fonts were used to import and apply a variety of fonts to enhance the visual appeal of the website.
 
-- [Google Developer Tools:]  
-   - Google developer Tools are Integrated browser tools used for debugging, profiling, and optimizing the website during development.
+- [Chrome DevTools:](https://developer.chrome.com/docs/devtools/)  
+   - Chrome developer Tools were used for debugging, and optimizing the website during development.
 
-- [Icons:] (https://icons8.com/icons/set/favicon-game) 
-   - Tool used to find all kind of icons, used for the controler icon of the website.
+- [Icons:](https://icons8.com/icons/set/favicon-game) 
+   - Icons is a tool used to find all kind of icons, in this project was used for the controler icon of the website.
 
-- [Font Awesome:] (https://fontawesome.com/)
+- [Font Awesome:](https://fontawesome.com/)
    - Font Awsome is a Icon toolkit used for the arrow icon of the Reshuffle Cards button.
 
-- [VSCode (Visual Studio Code):] (https://code.visualstudio.com/) 
+- [VSCode (Visual Studio Code):](https://code.visualstudio.com/) 
    - VSCode is a lightweight and powerful code editor used for writing, editing, and debugging the code for this game.
 
-- [Techsini:] (https://techsini.com/multi-mockup/)
+- [Techsini:](https://techsini.com/multi-mockup/)
    - Techsii was used to create mockup images of home page in different devices (phone, ipad, laptop, desktop).
 
-- [Pexels:] (https://www.pexels.com/)
+- [Pexels:](https://www.pexels.com/)
    - Pexels is an online platform for high-quality stock photos, used for the cards pictures of the game.
 
-- [Balsamiq:] (https://balsamiq.com/)
+- [Balsamiq:](https://balsamiq.com/)
    - Balsamiq was used to generate wireframes of the game page.
