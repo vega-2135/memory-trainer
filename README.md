@@ -143,3 +143,7 @@ To deploy Memory Trainer to GitHub Pages from its GitHub repository, the followi
 GitHub Pages automatically publishes your site when you push changes to the `gh-pages` branch or the `docs` folder in the `main` branch. Ensure your repository is configured accordingly for GitHub Pages.
 
 For more details on GitHub Pages, refer to the [GitHub Pages Documentation](https://docs.github.com/en/pages).
+
+
+
+* Background image: [Rika from flicker](https://www.flickr.com/photos/rikaconfesses/8319972287/in/photolist-dFd2U4-64kfrg-64keaD-dTb7Km-2dCRMx-xQC7Bu-65nZvD-Qxv5PY-khzYCk-23k3hpu-4MfYe8-nYsJyX-2bdbAH1-QgG3DC-VcnuyH-T3zH6J-65sh3Q-dFiu5u-WW78rt-dcQLhe-9vo2u8-uC569-fzYLdi-UJizVD-2zf8Sm-4zs34-6uP4cg-6Gw1E-G9Kvx1-Fiejzo-wsVrgz-26t9pTQ-2t8bb-6gNLKE-24EWPv7-UJiACv-q95i6N-p7ru5a-C9sjKk-28CvXKt-9f3mg7-SRucUb-y2HiCC-qB2SZb-22DsK29-oreNv-29QAn9S-U9bXyS-8VSbhU-JwFGTP)

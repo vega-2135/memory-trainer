@@ -5,6 +5,9 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 main {
@@ -174,5 +177,10 @@ div#footer i {
     #difficulty-text {
         font-size: 1.2rem;
     }
+
+    body {
+        background-size: contain;
+    }
+
 
 }
