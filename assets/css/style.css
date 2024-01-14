@@ -54,6 +54,17 @@ button:hover {
     align-self: center;
 }
 
+/* Keep black color and remove the underline for the page header link */
+#page-header {
+    color: black;
+    text-decoration: none;
+}
+
+/* Keep the same color as when unvisited */
+#page-header:visited {
+    color: black;
+}
+
 #welcome {
     align-items: flex-start;
     text-align: center;

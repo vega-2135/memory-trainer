@@ -12,6 +12,9 @@ let easyLevelSection = document.getElementById("egame-section");
 let gameSection = document.getElementById("game-section");
 let allCards = document.getElementById("all-cards")
 
+const pageHeader = document.getElementById("page-header");
+
+
 let difficulty;
 
 // Image used as the cover
@@ -73,10 +76,12 @@ function changePage(id, levelLength) {
     console.log(difficulty);
 
     switch (id) {
+        // Player has select "Play Game" from the welcome screen
         case "welcome":
             welcomeSection.classList.toggle("hidden");
             levelSection.classList.toggle("hidden");
             break;
+        // Player has select the difficult level => Let the games begin!
         case "level":
             levelSection.classList.toggle("hidden");
             gameSection.classList.toggle("hidden");
@@ -84,9 +89,15 @@ function changePage(id, levelLength) {
             showBlockedCards(levelLength);
             break;
         // Game ends and shows back the welcome
-        default:
+        case "newgame":
             gameSection.classList.toggle("hidden");
             welcomeSection.classList.toggle("hidden");
+
+        // Player has clicked the H1 header so the welcome screen is shown again (and hide all other two sections)
+        default:
+            welcomeSection.classList.remove("hidden");
+            levelSection.classList.add("hidden");
+            gameSection.classList.add("hidden");
     }
 }
 
@@ -175,4 +186,5 @@ easyButton.addEventListener("click", () => changePage("level", easyLength))
 mediumButton.addEventListener("click", () => changePage("level", mediumLength));
 hardButton.addEventListener("click", () => changePage("level", hardLength));
 resetButton.addEventListener("click", () => resetGame(difficulty));
-playNewGameButton.addEventListener("click", () => changePage("goback"));
+playNewGameButton.addEventListener("click", () => changePage("newgame"));
+pageHeader.addEventListener("click", () => changePage("show-welcome-again"));
