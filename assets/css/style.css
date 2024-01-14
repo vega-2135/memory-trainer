@@ -41,6 +41,11 @@ button:hover {
     background-color: bisque;
 }
 
+
+/***********************
+*       Classes
+***********************/
+
 .hidden {
     display: none !important;
 }
@@ -56,6 +61,15 @@ button:hover {
     flex-wrap: wrap;
     align-self: center;
 }
+
+.cards {
+    margin: 15px;
+    border-radius: 10px;
+}
+
+/***********************
+*       IDs
+***********************/
 
 /* Keep black color and remove the underline for the page header link */
 #page-header {
@@ -114,11 +128,6 @@ button:hover {
     padding: 100px 50px 50px 100px;
     height: 450px;
     max-width: 450px;
-}
-
-.cards {
-    margin: 15px;
-    border-radius: 10px;
 }
 
 #footer {
