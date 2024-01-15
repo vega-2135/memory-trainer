@@ -4,7 +4,7 @@ Memory Trainer is a entertaining simple to play memory card game targeted toward
 
 <h2 align="center"><img src=docs_for_readme/game_mockup.png></h2>
 
-[View the live project here.](https://github.com/vega-2135/memory-trainer/deployments/github-pages)
+[View the live project here.](https://vega-2135.github.io/memory-trainer/)
 
 ## User Experience (UX)
 
