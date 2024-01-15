@@ -1,4 +1,6 @@
 // Buttons
+/* jshint -W033 */
+/* jshint esversion: 6 */
 let playButton = document.getElementById("play-button");
 let easyButton = document.getElementById("easy");
 let mediumButton = document.getElementById("medium");

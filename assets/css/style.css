@@ -15,7 +15,8 @@ main {
     flex: 1 0 auto;
 }
 
-html, button {
+html,
+button {
     font-family: 'Exo 2', sans-serif;
 }
 
@@ -116,14 +117,16 @@ button:hover {
     align-items: center;
 }
 
-#difficulty-text{
+#difficulty-text {
     font-size: 1.2rem;
     background-color: #f2f0f0;
     border: solid;
     padding: 20px;
 }
 
-#easy, #medium, #hard {
+#easy,
+#medium,
+#hard {
     margin: 20px 0;
     min-width: 150px;
 }
@@ -178,12 +181,13 @@ div#footer i {
 
 
 @media screen and (min-width: 1024px) {
+
     /* General styles */
     body {
         background-size: cover;
     }
 
-    #difficulty-text{
+    #difficulty-text {
         font-size: 1.5rem;
     }
 
