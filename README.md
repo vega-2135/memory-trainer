@@ -113,6 +113,9 @@ The W3C Markup Validator, W3C CSS Validator and JSHint JavaScript Validator Serv
 
    ![Alt text](docs_for_readme/jshint.png)
 
+### Manual Testing
+
+![Alt text](docs_for_readme/manual_testing.png)
 
 ## Deployment
 ### Deployment
@@ -156,6 +159,36 @@ GitHub Pages automatically publishes your site when you push changes to the `gh-
 
 For more details on GitHub Pages, refer to the [GitHub Pages Documentation](https://docs.github.com/en/pages).
 
+## Credits
+### Code
+- The code for the function that shuffle the pictures was written following the example given by this website: [freecodecamp](https://www.freecodecamp.org/news/how-to-shuffle-an-array-of-items-using-javascript-or-typescript/)
+
+- The MDN websiter was visited several times to refresh knowledge of html and css, and also for the application of other concepts not given in the course.
+
+### Images
+
+- Background image: [Rika from flicker](https://www.flickr.com/photos/rikaconfesses/8319972287/in/photolist-dFd2U4-64kfrg-64keaD-dTb7Km-2dCRMx-xQC7Bu-65nZvD-Qxv5PY-khzYCk-23k3hpu-4MfYe8-nYsJyX-2bdbAH1-QgG3DC-VcnuyH-T3zH6J-65sh3Q-dFiu5u-WW78rt-dcQLhe-9vo2u8-uC569-fzYLdi-UJizVD-2zf8Sm-4zs34-6uP4cg-6Gw1E-G9Kvx1-Fiejzo-wsVrgz-26t9pTQ-2t8bb-6gNLKE-24EWPv7-UJiACv-q95i6N-p7ru5a-C9sjKk-28CvXKt-9f3mg7-SRucUb-y2HiCC-qB2SZb-22DsK29-oreNv-29QAn9S-U9bXyS-8VSbhU-JwFGTP)
+
+- Pexels images:
+
+  All images on the website were sourced from Pexels.
+  
+  Image credits and links to the pictures along with the names of the owners are listed below:
+  
+   1. [Violet Flower](https://www.pexels.com/photo/close-up-photography-of-purple-petaled-flower-133464/) - Photo By [Anthony](https://www.pexels.com/@inspiredimages/)
+
+   2. [Yellow Flower](https://www.pexels.com/photo/close-up-photography-of-purple-petaled-flower-133464/) - Photo By [Anthony](https://www.pexels.com/@inspiredimages/)
+
+   3. [Pineapple](https://www.pexels.com/photo/ripe-tropical-pineapple-in-studio-7194784/) - Photo By [AnthSHVETS productionony](https://www.pexels.com/@shvets-production/)
+
+   4. [White Flower](https://www.pexels.com/photo/macro-shot-of-white-flower-669508/) - Photo By [Lukas](https://www.pexels.com/@goumbik/)
+
+   5. [Blue Berries](https://www.pexels.com/photo/blueberries-in-a-bowl-19650387/) - Photo By [Milany Figueroa](https://www.pexels.com/photo/blueberries-in-a-bowl-19650387/)
+
+   6. [Lemon](https://www.pexels.com/photo/)
+   sliced-pieces-of-lemon-on-pink-surface-4021868/) - Photo By [Karolina Grabowskaas](https://www.pexels.com/@karolina-grabowska/)
 
 
-* Background image: [Rika from flicker](https://www.flickr.com/photos/rikaconfesses/8319972287/in/photolist-dFd2U4-64kfrg-64keaD-dTb7Km-2dCRMx-xQC7Bu-65nZvD-Qxv5PY-khzYCk-23k3hpu-4MfYe8-nYsJyX-2bdbAH1-QgG3DC-VcnuyH-T3zH6J-65sh3Q-dFiu5u-WW78rt-dcQLhe-9vo2u8-uC569-fzYLdi-UJizVD-2zf8Sm-4zs34-6uP4cg-6Gw1E-G9Kvx1-Fiejzo-wsVrgz-26t9pTQ-2t8bb-6gNLKE-24EWPv7-UJiACv-q95i6N-p7ru5a-C9sjKk-28CvXKt-9f3mg7-SRucUb-y2HiCC-qB2SZb-22DsK29-oreNv-29QAn9S-U9bXyS-8VSbhU-JwFGTP)
+##  Acknowledgement
+
+I'd like to thank my mentor Brian Macharia, for his prompt and precise feedback on the changes required to improve the UX and functionality of Memory Trainer as well as to comply with good coding practices and web standards. Always thankful for his super handy resources and screenshots.
