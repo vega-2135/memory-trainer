@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Memory Trainer">
-    <meta name="keywords"
-    content="Game, memory game, memory, train, train memory, play, fun game,
+    <meta name="keywords" content="Game, memory game, memory, train, train memory, play, fun game,
     entertainment">
     <title>Memory Trainer</title>
 
@@ -18,31 +18,33 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 
     <!-- Favicon -->
-    <link rel="android-icon" sizes="96x96" href="assets/favicon/Android/icons8-game-controller-96(-xxhdpi).png">
+    <link rel="icon" sizes="96x96" href="assets/favicon/Android/icons8-game-controller-96(-xxhdpi).png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/icons8-game-controller-32.png">
     <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon/icons8-game-controller-64.png">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href=" https://cdn.jsdelivr.net/npm/sweetalert2@11.10.3/dist/sweetalert2.min.css " rel="stylesheet">
-    
+
 </head>
+
 <body>
     <header>
         <h1><a id="page-header" href="#welcome-section">Memory Trainer</a></h1>
     </header>
 
     <main>
-       
+
         <!-- First welcome screen-->
         <section id="welcome-section">
             <div id="welcome">
                 <h3 id="welcome-message">Welcome to Memory Trainer</h3>
-                <p id="explanation">Memory is the hallmark of intelligence, and with this game you will train it. The idea of this game is to find all pairs of matching pictures</p>
+                <p id="explanation">Memory is the hallmark of intelligence, and with this game you will train it. The
+                    idea of this game is to find all pairs of matching pictures</p>
             </div>
             <div id="play-game">
                 <button id="play-button">Play Game</button>
             </div>
         </section>
-        
+
         <!-- Second screen choosing difficulty-->
         <section id="level-section" class="hidden">
             <div id="difficulty">
@@ -52,9 +54,10 @@
                 <button id="hard">Hard</button>
             </div>
         </section>
-        
+
         <!--Third screen with cards with game-->
         <section id="game-section" class="hidden">
+            <h2 class="hidden-heading">Game</h2>
             <div id="game-btn-container">
                 <button id="reset"><i class="fa-solid fa-arrow-rotate-right"></i> Reshuffle Cards</button>
                 <button id="play-new-game-button">Play New Game</button>
@@ -66,9 +69,13 @@
 
     <footer>
         <div id="footer">
-            <a href="https://github.com/vega-2135/memory-trainer" target="_blank" aria-label="Visit the game's repository page on Github"><i class="fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://www.facebook.com/" target="_blank" aria-label="Visit Facebook page"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-            <a href="https://www.instagram.com/" target="_blank" aria-label="Visit Instagram page"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://github.com/vega-2135/memory-trainer" target="_blank"
+                aria-label="Visit the game's repository page on Github"><i class="fa fa-github"
+                    aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Visit Facebook page"><i
+                    class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Visit Instagram page"><i
+                    class="fa fa-instagram" aria-hidden="true"></i></a>
         </div>
     </footer>
 
@@ -79,4 +86,5 @@
     <script src="https://kit.fontawesome.com/4b6d9dae9f.js" crossorigin="anonymous"></script>
     <script src=" https://cdn.jsdelivr.net/npm/sweetalert2@11.10.3/dist/sweetalert2.all.min.js "></script>
 </body>
-</html
+
+</html>
