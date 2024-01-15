@@ -99,7 +99,19 @@ Memory Trainer is a entertaining simple to play memory card game targeted toward
    - Balsamiq was used to generate wireframes of the game page.
 
 ## Testing
+
+### Code validation
 The W3C Markup Validator, W3C CSS Validator and JSHint JavaScript Validator Services were used to validate HTML and CSS and JavaScript code of the project to ensure there were no syntax errors in this project.
+
+- HTML
+
+   ![Alt text](docs_for_readme/w3c_markup_validator.png)
+- CSS
+
+   ![Alt text](docs_for_readme/w3c_css_validator.png)
+- JavaScript
+
+   ![Alt text](docs_for_readme/jshint.png)
 
 
 ## Deployment
