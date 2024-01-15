@@ -69,7 +69,10 @@ let images = [
     }
 ]
 
-// Function to change between sections
+/**
+ * Change current page/section to another one depending
+ * on what is clicked by the user
+ */
 function changePage(id, levelLength) {
 
     difficulty = levelLength;
@@ -100,7 +103,11 @@ function changePage(id, levelLength) {
     }
 }
 
-
+/**
+ * Shuffles the cards with the game pictures 
+ * For this function the Fisher-Yates Sorting Algorithm
+ * was used
+ */
 function shuffleImagesPositions(array) {
 
   for (let i = array.length - 1; i > 0; i--) {
@@ -110,7 +117,11 @@ function shuffleImagesPositions(array) {
   return array;
 }
 
-
+/**
+ * Slice the Images array depending on the chosen level of 
+ * difficulty, then shuffle this new array and cover the 
+ * game pictures with a cover pink card
+ */
 function showBlockedCards(levelLength) {
 
     let levelImages = images.slice(0, levelLength);
@@ -125,7 +136,12 @@ function showBlockedCards(levelLength) {
 }
 
 
-
+/**
+ * Shows a picture when its cover pink card is clicked
+ * if the second uncovered picture doesn't match the first
+ * uncovered picture, both pictures are covered again
+ * with the pink cover card
+ */
 function showCard(id) {
     const img = document.getElementById("square" + id);
 
@@ -133,7 +149,7 @@ function showCard(id) {
         img.src = answer[id]['src'];
         flippedCards.push(id);
 
-        // todo: let's make it clearere why we need to check against 2
+        // We need to check against 2, because we want to compre if two umages match
         if (flippedCards.length === 2) {
             setTimeout(() => {
                 matchingCards()
@@ -142,7 +158,11 @@ function showCard(id) {
     }
 }
 
-
+/**
+ * Compares first and second uncovered pictures
+ * when all matching pairs are found a congratulation 
+ * message appears on the screen
+ */
 function matchingCards() {
     
     const [id1, id2] = flippedCards;
@@ -173,7 +193,9 @@ function matchingCards() {
 
 }
 
-
+/** Re-shuffles the pictures covered by the pink cards
+ * and the game starts again
+ */
 function resetGame(difficulty) {
     images = shuffleImagesPositions(images);
     showBlockedCards(difficulty);
