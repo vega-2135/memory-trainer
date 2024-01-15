@@ -6,8 +6,8 @@ body {
     margin: 0;
     padding: 0;
     background-image: url("../images/background.jpg");
-    background-size: cover;
     background-position: center;
+    background-size: contain;
 }
 
 main {
@@ -35,7 +35,7 @@ h1 {
 }
 
 button {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 15px;
     border: solid rgb(18, 54, 66);
     border-radius: 10px;
@@ -48,8 +48,8 @@ button:hover {
 
 
 /***********************
-*       Classes
-***********************/
+ *       Classes
+ ***********************/
 
 .hidden {
     display: none !important;
@@ -68,13 +68,14 @@ button:hover {
 }
 
 .cards {
-    margin: 15px;
+    width: 80px;
+    margin: 15px 5px;
     border-radius: 10px;
 }
 
 /***********************
-*       IDs
-***********************/
+ *       IDs
+ ***********************/
 
 /* Keep black color and remove the underline for the page header link */
 #page-header {
@@ -116,7 +117,7 @@ button:hover {
 }
 
 #difficulty-text{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     background-color: #f2f0f0;
     border: solid;
     padding: 20px;
@@ -145,7 +146,7 @@ button:hover {
 
 #all-cards {
     display: flex;
-    max-width: 690px;
+    max-width: 300px;
     width: 100%;
     flex-wrap: wrap;
     align-items: center;
@@ -163,24 +164,35 @@ div#footer i {
     margin: 0 10px;
 }
 
-@media screen and (max-width: 290px) {
+@media screen and (min-width: 768px) {
+    .cards {
+        width: 150px;
+        margin: 15px 5px;
+        border-radius: 10px;
+    }
+
+    #all-cards {
+        max-width: 550px;
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    /* General styles */
+    body {
+        background-size: cover;
+    }
+
+    #difficulty-text{
+        font-size: 1.5rem;
+    }
 
     button {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .cards {
-        width: 80px;
-        margin: 15px 5px;
+        margin: 15px;
     }
-
-    #difficulty-text {
-        font-size: 1.2rem;
-    }
-
-    body {
-        background-size: contain;
-    }
-
-
 }
