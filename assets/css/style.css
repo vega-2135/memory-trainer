@@ -100,7 +100,6 @@ button:hover {
 #welcome-section {
     display: flex;
     flex-direction: column;
-    min-height: 600px;
 }
 
 #play-game {
@@ -175,7 +174,6 @@ div#footer i {
         max-width: 550px;
     }
 }
-
 
 
 @media screen and (min-width: 1024px) {
