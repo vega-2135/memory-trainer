@@ -1,6 +1,8 @@
 // Buttons
 /* jshint -W033 */
 /* jshint esversion: 6 */
+/*jshint sub:true*/
+
 let playButton = document.getElementById("play-button");
 let easyButton = document.getElementById("easy");
 let mediumButton = document.getElementById("medium");
@@ -10,7 +12,6 @@ let playNewGameButton = document.getElementById("play-new-game-button");
 
 let welcomeSection = document.getElementById("welcome-section");
 let levelSection = document.getElementById("level-section");
-let easyLevelSection = document.getElementById("egame-section");
 let gameSection = document.getElementById("game-section");
 let allCards = document.getElementById("all-cards")
 
@@ -96,6 +97,7 @@ function changePage(id, levelLength) {
         case "newgame":
             gameSection.classList.toggle("hidden");
             welcomeSection.classList.toggle("hidden");
+            break;
 
         // Player has clicked the H1 header so the welcome screen is shown again (and hide all other two sections)
         default:
