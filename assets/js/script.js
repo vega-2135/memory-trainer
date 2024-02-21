@@ -175,6 +175,12 @@ function matchingCards() {
 
     if (answer[id1]['src'] === answer[id2]['src']) {
         currentlyMatchingCards += 2;
+
+        // This removes the possiblity of being clickable and thus solves the bug of 
+        // being counted more than once and flippable
+        img1.removeAttribute("onclick");
+        img2.removeAttribute("onclick");
+
         // When the user has matched all the pairs, then show congrats message and restart game with 0 flipped cards
         if (currentlyMatchingCards === answer.length) {
             // All pairs were found, player can end the game and play again
@@ -187,6 +193,7 @@ function matchingCards() {
             }).then((result) => {
                 changePage("reset");
             });
+
         }
     } else {
         // Cards don't match, flip them back
