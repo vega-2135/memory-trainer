@@ -33,11 +33,11 @@ Memory Trainer is a entertaining simple to play memory card game targeted toward
 
 *   ### Wireframes
 
-    -   Welcome Page Wireframe - [View](https://github.com/vega-2135/memory-trainer/wireframes/welcome_page.png)
+    -   Welcome Page Wireframe - [View](https://github.com/vega-2135/memory-trainer/blob/main/wireframes/welcome_page.png)
 
-    -   Levels Page Wireframe - [View](https://github.com/vega-2135/memory-trainer/wireframes/level_page.png)
+    -   Levels Page Wireframe - [View](https://github.com/vega-2135/memory-trainer/blob/main/wireframes/level_page.png)
 
-    -   Game Page Wireframe - [View](https://github.com/vega-2135/memory-trainer/wireframes/game_page.png)
+    -   Game Page Wireframe - [View](https://github.com/vega-2135/memory-trainer/blob/main/wireframes/game_page.png)
 
 ## Features
 
@@ -46,16 +46,40 @@ Memory Trainer is a entertaining simple to play memory card game targeted toward
     -  #### Home Page
        - The home page contains a welcoming message explaining how to play the game.
        - Under the welcoming message there is a Play Game button that takes the user to the level page when the user clicks on it.
+
+       ![Alt text](docs_for_readme/features_images/homepage.png)
+
     -  #### Levels Page
        - The level page shows the users a message welcoming the user to choose the level of difficulty of the game.
        - Under the choose level message, there are three buttons with the text Easy, Medium and Hard, that will take the user to the corresponding level.
+
+       ![Alt text](docs_for_readme/features_images/difficulty_level.png)
+
+       - Easy difficulty level: 
+
+       ![Alt text](docs_for_readme/features_images/easy_game.png)
+
+       - Medium difficulty level: 
+
+       ![Alt text](docs_for_readme/features_images/medium_game.png)
+
+       - Hard difficulty level:
+
+       ![Alt text](docs_for_readme/features_images/hard_game.png)
+
     -  #### Game Page
        - Once the user click on a level button, a new page appears with cards (6 in the easy level, 8 in the medium and 12 in the hard level). All cards are cover by a pink card that once the user click on it, it will show a picture.
        - After clicking the second pink card, if the appearing picture does not match the picture in the first card, then both pictures are 'covered' again with a pink card. If the second picture match the first one, then both pictures remain uncover.
-       - Once the user has found all pairs, an alert message appear containing the following message: Congratulativns! You've matched all the cards. 
-       -  At all times the user can press the reshuffle card button, to reset the game, i.e. the cards of the game are reshuffled and the game start again, or press the play again button, in which case, the user is taken to the level page.
 
--   #### Upcoming Features
+       ![Alt text](docs_for_readme/features_images/started_game.png)
+
+       - Once the user has found all pairs, an alert message appear containing the following message: Congratulativns! You've matched all the cards. 
+
+       ![Alt text](docs_for_readme/features_images/finished_game.png)
+
+       -  At all times the user can press the reshuffle card button, to reset the game, i.e. the cards of the game are reshuffled and the game start again, or press the play again button, in which case, the user is taken to the level page.
+       
+-   ### Upcoming Features
 
       - More levels of difficulty.
       - Users will be able to sign-in and have an account with all their scores.
@@ -106,9 +130,11 @@ The W3C Markup Validator, W3C CSS Validator and JSHint JavaScript Validator Serv
 - HTML
 
    ![Alt text](docs_for_readme/w3c_markup_validator.png)
+
 - CSS
 
    ![Alt text](docs_for_readme/w3c_css_validator.png)
+   
 - JavaScript
 
    ![Alt text](docs_for_readme/jshint.png)

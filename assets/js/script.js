@@ -21,7 +21,7 @@ const pageHeader = document.getElementById("page-header");
 let difficulty;
 
 // Image used as the cover
-const coverImage = "assets/images/scaled_images/pink_square.png";
+const coverImage = "assets/images/pink_square.png";
 
 // Number of pairs depending on level
 let easyLength = 3;
@@ -41,32 +41,32 @@ let flippedCards = [];
 // Array with all images (for easy. medium and hard levels)
 let images = [
     {
-        src: "assets/images/scaled_images/blueberries.png",
+        src: "assets/images/blueberries.webp",
         alt: "blueberries",
         class:"cards"
     },
     {
-        src: "assets/images/scaled_images/lemon.png",
+        src: "assets/images/lemon.webp",
         alt: "lemon",
         class:"cards"
     },
     {
-        src: "assets/images/scaled_images/white_flower.jpg",
+        src: "assets/images/white_flower.webp",
         alt: "white flower",
         class:"cards"
     },
     {
-        src: "assets/images/scaled_images/violet_flower.jpg",
+        src: "assets/images/violet_flower.webp",
         alt: "violet flower",
         class:"cards"
     },
     {
-        src: "assets/images/scaled_images/yellow_flower.jpg",
+        src: "assets/images/yellow_flower.webp",
         alt: "yellow flower",
         class:"cards"
     },
     {
-        src: "assets/images/scaled_images/pineapple.jpg",
+        src: "assets/images/pineapple.webp",
         alt: "pineapple",
         class:"cards"
     }
