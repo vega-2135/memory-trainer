@@ -34,11 +34,11 @@ let currentlyMatchingCards = 0;
 // Answer will be an array containing img objects with the final index showed in the game
 let answer;
 
-//Array to be filled with ids pairs to which will be used as indexes of images objects to check wether two pictures are the same
+//Array to be filled with ids pairs which will be used as indexes of images objects to check wether two pictures are the same
 let flippedCards = [];
 
 
-// Array with all images (for easy. medium and hard levels)
+// Array with all the images (for easy. medium and hard levels)
 let images = [
     {
         src: "assets/images/blueberries.webp",
@@ -81,12 +81,12 @@ function changePage(id, levelLength) {
     difficulty = levelLength;
 
     switch (id) {
-        // Player has select "Play Game" from the welcome screen
+        // Player has selected "Play Game" from the welcome screen
         case "welcome":
             welcomeSection.classList.toggle("hidden");
             levelSection.classList.toggle("hidden");
             break;
-        // Player has select the difficult level => Let the games begin!
+        // Player has selected the difficult level => Let the games begin!
         case "level":
             levelSection.classList.toggle("hidden");
             gameSection.classList.toggle("hidden");
@@ -153,7 +153,7 @@ function showCard(id) {
         img.src = answer[id]['src'];
         flippedCards.push(id);
 
-        // We need to check against 2, because we want to compre if two umages match
+        // We need to check against 2, because we want to compre if two images match
         if (flippedCards.length === 2) {
             setTimeout(() => {
                 matchingCards()
