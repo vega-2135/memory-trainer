@@ -158,6 +158,12 @@ button:hover {
     margin: 0 auto;
 }
 
+#all-cards > img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
 #game-btn-container {
     display: flex;
     justify-content: center;
