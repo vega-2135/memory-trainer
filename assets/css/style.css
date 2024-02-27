@@ -14,6 +14,7 @@ body {
 main {
     /* Make main element take any additional space and push the footer down */
     flex: 1 0 auto;
+    max-width: 2000px;
 }
 
 html,
@@ -204,5 +205,8 @@ div#footer i {
 
     .cards {
         margin: 15px;
+    }
+    #welcome {
+        font-size: 1.2rem;
     }
 }
